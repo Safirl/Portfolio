@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Abel-Regular';
+	src: url(../assets/Abel-Regular.ttf) format(truetype)
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(../assets/Source_Sans_Pro/SourceSansPro-Regular.ttf) format(truetype);
+}
+
+h1 {
+    /* H1 */
+
+	font-family: 'Abel-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 122px;
+
+    color: #000000;
+
+    -webkit-text-stroke: 2px #000000;
+}
+
+body {
+    /* texte */
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+background: #F4E6D7;
+
+}
+
+h2 {
+    /* H2 */
+
+font-family: 'Abel-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 56px;
+/* identical to box height */
+
+letter-spacing: -0.025em;
+}
+
+.bouton{
+    
+}
+
