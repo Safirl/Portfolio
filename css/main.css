@@ -1,0 +1,129 @@
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+:root{
+    --violet: #8A579C;
+    ;
+}
+
+/* Titre */
+
+.title {
+    margin-bottom: 40px;
+    margin-top: 200px;
+    max-width: 60vw;
+}
+
+/* Premier paragraphe - qui-suis-je ? */
+
+.presentation {
+    display: flex;
+}
+
+.presentation img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.texte-presentation{
+    margin-left: 7vw;
+    max-width: 600px;
+}
+
+.texte-presentation p {
+    margin-bottom: 40px;
+}
+
+/* Deuxième paragraphe - Mes valeurs */
+
+.mes-valeurs {
+    display: flex;
+    margin-top: 100px;
+}
+
+.mes-valeurs img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.texte-valeurs{
+    margin-right: 7vw;
+    max-width: 600px;
+}
+
+/* Me contacter */
+
+.Contact {
+    display: wrap;
+    margin-top: 100px;
+    margin-bottom: 154px;
+}
+
+.informations-contact{
+    display: flex;
+    margin-top: 31px;
+}
+
+.planche-contact{
+    margin-left: 7vw;
+    max-width: 600px;
+}
+
+.planche-contact a {
+
+    font-family: 'Abel-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 56px;
+    color: var(--violet);
+
+/* identical to box height */
+
+    letter-spacing: -0.025em;
+    text-decoration-line: underline;
+
+}
+.planche-contact a:hover {
+    color: #5e316d;
+}
+
+.Contact img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.liens-contact{
+    display: flex;
+}
+
+@media screen and (max-width: 1077px) {
+    .presentation{
+        /* flex-wrap: wrap; */
+        margin-top: 100px;
+    }
+
+    .presentation img {
+        max-width: 400px;
+        max-height: 300px;
+    }
+    
+    .texte-presentation{
+        margin-left: 7vw;
+        max-width: 600px;
+    }
+    
+    .texte-presentation p {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 915px) {
+    .presentation{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+}
