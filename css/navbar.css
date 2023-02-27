@@ -19,6 +19,10 @@
     width: calc(100% - 10vw);
 }
 
+.burger {
+    display: none;
+}
+
 .navbar-boutons {
     list-style-type: none;
     padding-top: 19px;
@@ -66,7 +70,51 @@ li{
     background: #5e316d;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1212px) {
     
+    .navbar {
+        padding: 0px;
+    }
+
+    .nav-link {
+        display: none;
+        font-size: 24px;
+    }
+
+    .nav-button {
+        padding: 0px;
+    }
+
+    li {
+        padding: 5px 16px;
+        padding-left: 0px;
+    }
+
+    .Accueil {
+        padding-left: 16px;
+    }
+
+    .navbar-boutons {
+        list-style-type: none;
+        overflow: hidden;
+        border-radius: 5px;
+        
+         /* Auto layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .navbar-boutons li .Accueil-p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: initial;
+    }
+    
+    .burger {
+        display: inherit;
+        width: 50px;
+        padding-right: 12px;
+    }
 }
 

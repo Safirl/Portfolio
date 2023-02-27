@@ -10,12 +10,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/main.css">
+
 </head>
+<header>
+    <?php include_once('header.html')?>
+    <!-- <script>
+        var iframe = document.createElement('iframe');
+        iframe.src = '../code/header.html';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        document.body.appendChild(iframe);
+    </script> -->
+    
+</header>
+
 <body>
-    <?php require_once'header.html';
-    require_once'main.html';
-    require_once'footer.html';?>
+    <main class="main">
+
+    <!-- //titre -->
+        <div class="title">
+            <h1>Loïc Leforestier</h1>
+            <h2>Game Designer et Réalisateur</h2>
+            <p>Passionné de création vidéoludique et audiovisuelle, je communique sur des messages et valeurs importantes et actuelles.</p>
+        </div>
+    
+    <!-- //presentation -->
+        <div class="presentation">
+            <h1 class="h1-phone">Qui suis-je ?</h1>
+            <img src="../assets/images/LEFORESTIER_Loïc_PhotoPerso.jpg" alt="Une photo de moi sous mon meilleur jour !">
+            <div class="texte-presentation">
+                <h2>Qui suis-je ?</h2>
+                <p>Après mon Bac S à Toulouse, je me suis d’abord orienté vers des études en audiovisuelle grâce à une classe préparatoire en cinéma. Deux ans après, je me réoriente en BUT MMI de Bordeaux avec pour objectif de travailler dans le secteur du jeu vidéo.  Grâce à cette formation, j’ai pu  réaliser de nombreux projets. </p>
+                <a class="bouton" href="">Mes réalisations</a>
+            </div>
+        </div>
+    
+    <!-- Mes valeurs -->
+    
+        <div class="mes-valeurs">
+            <div class="texte-valeurs">
+                <h2 class="h2-desktop">Mes valeurs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aperiam qui sapiente eum, quas accusamus laborum quaerat perspiciatis eius dolore animi exercitationem. Itaque veritatis saepe blanditiis et facere, praesentium veniam?
+                    Ex praesentium molestiae minus a enim, officiis consequatur nisi distinctio laudantium et quisquam necessitatibus deleniti hic nostrum numquam, odit ipsum repellendus suscipit ut. Provident, pariatur praesentium minima reprehenderit dolorum ea.
+                </p>
+            </div>
+            <img src="../assets/images/WhatsApp Image 2023-02-24 à 21.45.12.jpg" alt="Un arbre représentant mes différentes valeurs.">
+            <h1 class="h1-phone">Mes valeurs</h1>
+        </div>
+    
+    <!-- //Me contacter -->
+    
+        <div class="Contact">
+            <h1>Me contacter</h1>
+            <div class="informations-contact">
+                <img src="../assets/images/WhatsApp Image 2023-02-24 à 21.45.12.jpg" alt="Un arbre représentant mes différentes valeurs.">
+                <div class="planche-contact">
+                    <a class="mail" href="mailto:loicleforestier.pro@gmail.com">Envoyer un mail</a>
+                    <ul class="liens-contact">
+                        <div class="colonne-gauche">
+                            <li>
+                                <a class="lien-contact" href="">Mon CV</a>
+                            </li> 
+                            <li>
+                                <a class="lien-contact" href="http://">Profil Github</a>
+                            </li>
+                            <li>
+                                <a class="lien-contact" href="http://">Profil Itch.io</a>
+                            </li>
+                        </div>
+                        <div class="colonne-droite">
+                            <li>
+                                <a class="lien-contact" href="http://">Profil Linkedin</a>
+                            </li>
+                            <li>
+                                <a class="lien-contact" href="http://">Profil Instagram</a>
+                            </li>
+                            <li>
+                                <a class="lien-contact" href="http://">Chaîne Youtube</a>
+                            </li> 
+                        </div>           
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
+<?php include_once('footer.html') ?> 
+        <!-- <script>
+            var iframe = document.createElement('iframe');
+            iframe.src = '../code/footer.html';
+            iframe.width = '100%';
+            iframe.height = '100%';
+            document.body.appendChild(iframe);
+        </script> -->
 </html>

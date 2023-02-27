@@ -1,18 +1,22 @@
-body {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
+/* Variables */
 
 :root{
     --violet: #8A579C;
     ;
 }
 
+/* Corps */
+
+main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
 /* Titre */
 
 .title {
     margin-bottom: 40px;
-    margin-top: 200px;
+    margin-top: 150px;
     max-width: 60vw;
 }
 
@@ -56,7 +60,6 @@ body {
 /* Me contacter */
 
 .Contact {
-    display: wrap;
     margin-top: 100px;
     margin-bottom: 154px;
 }
@@ -67,7 +70,7 @@ body {
 }
 
 .planche-contact{
-    margin-left: 7vw;
+    margin-left: 10vw;
     max-width: 600px;
 }
 
@@ -99,31 +102,122 @@ body {
     display: flex;
 }
 
-@media screen and (max-width: 1077px) {
-    .presentation{
-        /* flex-wrap: wrap; */
-        margin-top: 100px;
-    }
-
-    .presentation img {
-        max-width: 400px;
-        max-height: 300px;
-    }
-    
-    .texte-presentation{
-        margin-left: 7vw;
-        max-width: 600px;
-    }
-    
-    .texte-presentation p {
-        margin-bottom: 40px;
-    }
-
+.liens-contact li{
+    padding-top: 13px;
 }
 
-@media screen and (max-width: 915px) {
-    .presentation{
-        flex-wrap: wrap;
-        margin-top: 100px;
+.colonne-droite li {
+    padding-left: 30px;
+}
+
+/* Téléphone */
+
+@media screen and (max-width: 412px) {
+    /* Titre */
+
+    main {
+        margin-left: 7vw;
+        margin-right: 0vw;
     }
+
+.title {
+    margin-bottom: 75px;
+    margin-top: 140px;
+    max-width: 82vw;
+}
+
+/* Premier paragraphe - qui-suis-je ? */
+
+.presentation {
+    flex-wrap: wrap;
+}
+
+.presentation img {
+    width: 70vw;
+}
+
+.texte-presentation{
+    max-width: 350px;
+    margin-left: 0;
+}
+
+.texte-presentation p {
+    margin-bottom: 40px;
+    margin-top: 26px;
+    width: 80vw;
+}
+
+/* Deuxième paragraphe - Mes valeurs */
+
+.mes-valeurs {
+    flex-wrap: wrap-reverse;
+    margin-top: 100px;
+}
+
+.mes-valeurs img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.texte-valeurs{
+    margin-right: 7vw;
+    max-width: 600px;
+}
+
+.texte-valeurs p {
+    margin-top: 26px;
+    width: 85vw;
+}
+
+/* Me contacter */
+
+.Contact {
+    margin-top: 100px;
+    margin-bottom: 105px;
+}
+
+.informations-contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 31px;
+}
+
+.planche-contact {
+    margin: 0;
+    margin-top: 26px;
+}
+
+.mail{
+    margin-bottom: 36px;
+}
+
+.planche-contact a {
+
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.025em;
+    text-decoration-line: underline;
+
+}
+.planche-contact a:hover {
+    color: #5e316d;
+}
+
+.Contact img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.liens-contact{
+    display: flex;
+}
+
+.liens-contact li{
+    padding-top: 13px;
+}
+
+.colonne-droite li {
+    padding-left: 30px;
+}
 }

@@ -1,0 +1,42 @@
+.container-mentions {
+    display: flex;
+    justify-content: center;
+}
+
+.ligne {
+    position: absolute;
+    left: 5%;
+    border: 4px solid #8A579C;
+    border-radius: 5px;
+    width: 90vw;
+    margin-top: 24px;
+    margin-bottom: 33px;
+}
+
+footer p {
+    margin-top: 90px;
+    margin-bottom: 44px;
+}
+
+.footer-links {
+    padding-top: 93px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: 'Abel-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 56px;
+    color: var(--violet);
+
+/* identical to box height */
+
+    letter-spacing: -0.025em;
+    text-decoration-line: underline;
+}
