@@ -13,7 +13,7 @@
     margin-bottom: 33px;
 }
 
-footer p {
+.container-mentions p {
     margin-top: 90px;
     margin-bottom: 44px;
 }
@@ -39,4 +39,34 @@ footer p {
 
     letter-spacing: -0.025em;
     text-decoration-line: underline;
+}
+
+@media screen and (max-width: 550px) {
+  .ligne {
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+  .footer-links {
+    padding-top: 63px;
+    padding-left: 16%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .footer-link {
+    font-size: 18px;
+  }
+
+  .container-mentions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container-mentions p {
+  margin-top: 72px;
+  margin-bottom: 44px;
+  padding: 10px;
+}
 }

@@ -10,6 +10,7 @@
 main {
     margin-left: 10vw;
     margin-right: 10vw;
+    max-width: 1440px;
 }
 
 /* Titre */
@@ -134,6 +135,7 @@ main {
 
 .presentation img {
     width: 70vw;
+    margin-bottom: 26px;
 }
 
 .texte-presentation{

@@ -32,28 +32,29 @@ h1 {
 body {
     /* texte */
 
-font-family: 'SourceSansPro';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 30px;
-background: #F4E6D7;
-
+  font-family: 'SourceSansPro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  background: #F4E6D7;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
     /* H2 */
 
-font-family: 'Abel-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 44px;
-line-height: 56px;
-margin-bottom: 5px;
-/* identical to box height */
+  font-family: 'Abel-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 56px;
+  margin-bottom: 5px;
+  /* identical to box height */
 
-letter-spacing: -0.025em;
--webkit-text-stroke: 1px #000000;
+  letter-spacing: -0.025em;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .bouton{
@@ -64,16 +65,16 @@ letter-spacing: -0.025em;
     border-radius: 5px;
 
     /* Bouton */
-    
+
     font-family: 'Sono';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-decoration: none;
-    
+
     /* blanc écriture */
-    
+
     color: #F4F4F4;
 
     transition: 0.2s ease;
@@ -89,27 +90,27 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     body {
         /* texte */
-    
+
     font-size: 20px;
     }
-    
+
     h2 {
         /* H2 */
     font-size: 44px;
     /* identical to box height */
-    
+
     letter-spacing: -0.025em;
     -webkit-text-stroke: 1px #000000;
     }
-    
+
     .bouton{
-    
+
         /* Bouton */
         font-size: 26px;
-        
+
     }
 }
 
@@ -119,7 +120,7 @@ img {
         font-weight: 400;
         font-size: 46px;
         line-height: 59px;
-    
+
         -webkit-text-stroke: 2px #000000;
     }
 
@@ -127,41 +128,41 @@ img {
         margin-bottom: 26px;
         display: flex;
     }
-    
+
     body {
         /* texte */
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-    
+
     }
-    
+
     h2 {
         /* H2 */
-    
+
         font-weight: 400;
         font-size: 26px;
         line-height: 33px;
         letter-spacing: -0.025em;
-        
+
         color: #000000;
-        
+
         -webkit-text-stroke: 0.5px #000000;
     }
 
     .h2-desktop {
         display: none;
     }
-    
+
     .bouton{
-    
+
         /* Bouton */
 
         font-weight: 400;
         font-size: 20px;
         line-height: 29px;
     }
-    
+
     img {
         width: 60vw;
     }

@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/main.css">
-
 </head>
+
 <header>
     <?php include_once('header.html')?>
     <!-- <script>
@@ -23,7 +23,7 @@
         iframe.height = '100%';
         document.body.appendChild(iframe);
     </script> -->
-    
+
 </header>
 
 <body>
@@ -35,7 +35,7 @@
             <h2>Game Designer et Réalisateur</h2>
             <p>Passionné de création vidéoludique et audiovisuelle, je communique sur des messages et valeurs importantes et actuelles.</p>
         </div>
-    
+
     <!-- //presentation -->
         <div class="presentation">
             <h1 class="h1-phone">Qui suis-je ?</h1>
@@ -46,9 +46,9 @@
                 <a class="bouton" href="">Mes réalisations</a>
             </div>
         </div>
-    
+
     <!-- Mes valeurs -->
-    
+
         <div class="mes-valeurs">
             <div class="texte-valeurs">
                 <h2 class="h2-desktop">Mes valeurs</h2>
@@ -59,9 +59,9 @@
             <img src="../assets/images/WhatsApp Image 2023-02-24 à 21.45.12.jpg" alt="Un arbre représentant mes différentes valeurs.">
             <h1 class="h1-phone">Mes valeurs</h1>
         </div>
-    
+
     <!-- //Me contacter -->
-    
+
         <div class="Contact">
             <h1>Me contacter</h1>
             <div class="informations-contact">
@@ -72,7 +72,7 @@
                         <div class="colonne-gauche">
                             <li>
                                 <a class="lien-contact" href="">Mon CV</a>
-                            </li> 
+                            </li>
                             <li>
                                 <a class="lien-contact" href="http://">Profil Github</a>
                             </li>
@@ -89,8 +89,8 @@
                             </li>
                             <li>
                                 <a class="lien-contact" href="http://">Chaîne Youtube</a>
-                            </li> 
-                        </div>           
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -98,7 +98,7 @@
     </main>
 </body>
 
-<?php include_once('footer.html') ?> 
+<?php include_once('footer.html') ?>
         <!-- <script>
             var iframe = document.createElement('iframe');
             iframe.src = '../code/footer.html';
