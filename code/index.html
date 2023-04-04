@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
-<header>
-    <?php include_once('header.html')?>
-    <!-- <script>
-        var iframe = document.createElement('iframe');
-        iframe.src = '../code/header.html';
-        iframe.width = '100%';
-        iframe.height = '100%';
-        document.body.appendChild(iframe);
-    </script> -->
-
-</header>
+<script>
+  fetch('../code/header.html')
+  .then(response => response.text())
+  .then(html => {
+    var container = document.createElement('header');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+  });
+</script>
 
 <body>
+  <div class="container">
     <main class="main">
 
     <!-- //titre -->
@@ -43,7 +43,7 @@
             <div class="texte-presentation">
                 <h2>Qui suis-je ?</h2>
                 <p>Après mon Bac S à Toulouse, je me suis d’abord orienté vers des études en audiovisuelle grâce à une classe préparatoire en cinéma. Deux ans après, je me réoriente en BUT MMI de Bordeaux avec pour objectif de travailler dans le secteur du jeu vidéo.  Grâce à cette formation, j’ai pu  réaliser de nombreux projets. </p>
-                <a class="bouton" href="">Mes réalisations</a>
+                <a class="bouton" href="../code/realisations.html">Mes réalisations</a>
             </div>
         </div>
 
@@ -96,14 +96,18 @@
             </div>
         </div>
     </main>
+  </div>
 </body>
 
-<?php include_once('footer.html') ?>
-        <!-- <script>
-            var iframe = document.createElement('iframe');
-            iframe.src = '../code/footer.html';
-            iframe.width = '100%';
-            iframe.height = '100%';
-            document.body.appendChild(iframe);
-        </script> -->
+
+    <script>
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        var footerContainer = document.createElement('footer');
+        footerContainer.innerHTML = html;
+        document.body.appendChild(footerContainer);
+      })
+      .catch(error => console.error(error));
+    </script>
 </html>

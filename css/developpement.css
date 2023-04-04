@@ -1,0 +1,60 @@
+.container {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+/* Titre */
+
+.title {
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.title-text {
+  margin-right: 13vw;
+}
+
+.boutons-projets {
+  display: flex;
+}
+
+.bouton-ref-projet{
+  margin-top: 51px;
+  padding-right: 53px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(138, 87, 156, 0.57);
+  border-radius: 5px;
+  margin: 29px;
+  width: 538px;
+  padding-bottom: 35px;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-projet {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+@media screen and (max-width: 412px) {
+  container {
+  margin-right: 0 px;
+  }
+
+  .bouton-ref-projet{
+    padding-right: 21px;
+  }
+
+
+}

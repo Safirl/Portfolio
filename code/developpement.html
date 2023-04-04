@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Leforestier - Développement</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/developpement.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<script>
+  fetch('../code/header.html')
+  .then(response => response.text())
+  .then(html => {
+    var container = document.createElement('header');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+  });
+</script>
+
+
+<body>
+  <div class="container">
+    <section class="title">
+      <h1>Développement</h1>
+      <p class="title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos hic minus non! Tenetur nam debitis consectetur sit praesentium dicta molestiae vero non est dolorum. Veritatis mollitia asperiores dolore repellat.
+      Quisquam obcaecati quibusdam voluptates fuga eveniet doloremque ipsa vitae quam accusantium beatae deserunt eius iste dolore dignissimos minima modi vero dicta maiores ex, illo nisi distinctio voluptate? Delectus, explicabo soluta.</p>
+        <ul class="boutons-projets">
+          <li class="bouton-ref-projet">
+            <a class="bouton" href="">Git Hub</a>
+          </li>
+          <li class="bouton-ref-projet"><a class="bouton" href="">Itch.io</a></li>
+        </ul>
+    </section>
+  </div>
+
+  <!-- cartes -->
+  <div class="card-container">
+    <section class="card">
+      <img src="../assets/images/LEFORESTIER_Loïc_PhotoPerso.jpg" alt="">
+      <h2 class="text-projet">Kairo</h2>
+      <p class="text-projet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus ipsa autem deleniti quas, officiis quae temporibus nisi, cupiditate reprehenderit sit nihil facere minus tempore voluptas earum vel cumque natus.</p>
+    </section>
+    <section class="card">
+      <img src="../assets/images/LEFORESTIER_Loïc_PhotoPerso.jpg" alt="">
+      <h2 class="text-projet">Kairo</h2>
+      <p class="text-projet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus ipsa autem deleniti quas, officiis quae temporibus nisi, cupiditate reprehenderit sit nihil facere minus tempore voluptas earum vel cumque natus.</p>
+    </section>
+  </div>
+
+</body>
+
+<script>
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(html => {
+    var footerContainer = document.createElement('footer');
+    footerContainer.innerHTML = html;
+    document.body.appendChild(footerContainer);
+  })
+  .catch(error => console.error(error));
+</script>
+
+</html>

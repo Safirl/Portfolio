@@ -1,6 +1,6 @@
 :root{
-    --violet: #8A579C;
-    ;
+  --violet: #8A579C;
+  ;
 }
 
 .navbar {
@@ -10,8 +10,8 @@
     top: 32px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(138, 87, 156, 0.12);
-    backdrop-filter: blur(2px);
+    background: rgba(172, 87, 172, 0.327);
+    backdrop-filter: blur(5px);
     /* Note: backdrop-filter has minimal browser support */
     padding-left: 1rem;
     padding-right: 1rem;
@@ -36,7 +36,7 @@
     align-items: left;
 }
 
-li{
+.nav-button{
     padding: 12px 16px;
 }
 
@@ -49,29 +49,29 @@ li{
     border-radius: 5px;
 
     /* Bouton */
-    
+
     font-family: 'Sono';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-decoration: none;
-    
+
     /* blanc écriture */
-    
+
     color: #F4F4F4;
-    
+
     transition: 0.2s ease;
     border: solid 1px --violet;
 
 }
 
 .navbar-boutons li a:hover {
-    background: #5e316d;
+    background: #684276;
 }
 
 @media screen and (max-width: 1212px) {
-    
+
     .navbar {
         padding: 0px;
     }
@@ -82,12 +82,8 @@ li{
     }
 
     .nav-button {
-        padding: 0px;
-    }
-
-    li {
-        padding: 5px 16px;
-        padding-left: 0px;
+      padding: 5px 16px;
+      padding-left: 0px;
     }
 
     .Accueil {
@@ -98,7 +94,7 @@ li{
         list-style-type: none;
         overflow: hidden;
         border-radius: 5px;
-        
+
          /* Auto layout */
         display: flex;
         justify-content: space-between;
@@ -110,11 +106,10 @@ li{
         font-size: 24px;
         line-height: initial;
     }
-    
+
     .burger {
         display: inherit;
         width: 50px;
         padding-right: 12px;
     }
 }
-

@@ -1,0 +1,42 @@
+.main-realisations {
+  overflow: hidden;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  max-width: 1440px;
+  margin-bottom: 154px;
+}
+
+.title-realisations {
+  margin-top: 150px;
+  max-width: 1000px;
+}
+
+.category-title {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+
+}
+
+.category-title p {
+max-width: 50vw;
+}
+
+.carousel {   /* conteneur de tes éléments */
+  width: 100vw;
+  height: 40vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 103px;
+}
+
+.image-carousel {   /* exemples qui représente un élément */
+  height: calc(100% - 2px);
+  margin: 20px;
+}
+
+.carousel::-webkit-scrollbar {    /* selecteur la barre de défilement de ton conteneur */
+  display: none;
+}

@@ -6,17 +6,19 @@
 }
 
 /* Corps */
+.container {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
 
 main {
-    margin-left: 10vw;
-    margin-right: 10vw;
     max-width: 1440px;
 }
 
 /* Titre */
 
 .title {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     margin-top: 150px;
     max-width: 60vw;
 }
@@ -34,7 +36,7 @@ main {
 
 .texte-presentation{
     margin-left: 7vw;
-    max-width: 600px;
+    max-width: 730px;
 }
 
 .texte-presentation p {
@@ -55,7 +57,7 @@ main {
 
 .texte-valeurs{
     margin-right: 7vw;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 /* Me contacter */
@@ -80,7 +82,7 @@ main {
     font-family: 'Abel-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
+    font-size: 36px;
     line-height: 56px;
     color: var(--violet);
 
