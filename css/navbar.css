@@ -3,20 +3,24 @@
   ;
 }
 
+.phone {
+  display: none;
+}
+
 .navbar {
     position: fixed;
-    /* margin-left: 5vw;
-    margin-right: 5vw; */
     top: 32px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(172, 87, 172, 0.327);
-    backdrop-filter: blur(5px);
     /* Note: backdrop-filter has minimal browser support */
-    padding-left: 1rem;
-    padding-right: 1rem;
     border-radius: 5px;
     width: calc(100% - 10vw);
+    max-width: 1300px;
+
+
+  border-radius: 5px;
+  background: rgba(172, 87, 172, 0.327);
+  backdrop-filter: blur(5px);
 }
 
 .burger {
@@ -24,16 +28,15 @@
 }
 
 .navbar-boutons {
-    list-style-type: none;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    overflow: hidden;
-    border-radius: 5px;
+  list-style-type: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  overflow: hidden;
 
-     /* Auto layout */
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
+   /* Auto layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-button{
@@ -61,7 +64,7 @@
 
     color: #F4F4F4;
 
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     border: solid 1px --violet;
 
 }
@@ -72,17 +75,18 @@
 
 @media screen and (max-width: 1212px) {
 
-    .navbar {
-        padding: 0px;
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
 
     .nav-link {
-        display: none;
-        font-size: 24px;
+      display: none;
+      font-size: 24px;
     }
 
     .nav-button {
-      padding: 5px 16px;
+      padding: 5px 12px;
       padding-left: 0px;
     }
 
@@ -92,24 +96,66 @@
 
     .navbar-boutons {
         list-style-type: none;
-        overflow: hidden;
-        border-radius: 5px;
+    }
 
-         /* Auto layout */
-        display: flex;
-        justify-content: space-between;
-        align-items: left;
+    .navbar-boutons li a {
+      font-size: 24px;
     }
 
     .navbar-boutons li .Accueil-p{
         font-weight: 400;
-        font-size: 24px;
-        line-height: initial;
+        font-size: 20px;
     }
 
     .burger {
-        display: inherit;
-        width: 50px;
-        padding-right: 12px;
+        display: block;
+        width: 45px;
+        padding-right: 16px;
     }
+
+
+    /* Téléphone */
+    .phone {
+
+      background: #f8f8f8;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      top: 0vh;
+      left: 0vw;
+      display: none;
+    }
+
+    .phone-burger {
+        width: 45px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .phone-nav-button{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .phone ul li a{
+      font-family: 'Sono';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 38px;
+      text-decoration: none;
+
+      /* blanc écriture */
+
+      color: var(--violet);
+
+      transition: 0.3s ease;
+      border: solid 1px --violet;
+    }
+
 }

@@ -136,8 +136,9 @@ main {
 }
 
 .presentation img {
-    width: 70vw;
+    width: 90%;
     margin-bottom: 26px;
+    margin-right: 20px;
 }
 
 .texte-presentation{
@@ -159,8 +160,9 @@ main {
 }
 
 .mes-valeurs img {
-    max-width: 500px;
-    max-height: 400px;
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .texte-valeurs{
@@ -209,8 +211,9 @@ main {
 }
 
 .Contact img {
-    max-width: 500px;
-    max-height: 400px;
+  width: 90% !important;
+  height: 300px;
+  object-fit: cover;
 }
 
 .liens-contact{

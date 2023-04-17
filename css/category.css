@@ -64,5 +64,7 @@
     padding-right: 21px;
   }
 
-
+  .card img {
+    height: 300px;
+  }
 }
