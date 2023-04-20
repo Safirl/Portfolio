@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Leforestier - Dans ta serre</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/projet.css">
+</head>
+
+
+
+<body>
+  <div class="container"></div>
+  <div class="container-projet">
+    <p class="fil-arianne">
+      <a href="../code/index.html">Accueil</a>
+      >
+      <a href="../code/films.html">films</a>
+      >
+      <a href="../code/dans-ta-serre.html">Dans ta serre</a>
+
+    </p>
+    <h1>Dans ta serre</h1>
+    <p class="projet-texte">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, accusamus nostrum iusto corporis est culpa autem obcaecati sint, odit facilis repellendus, quia cumque id quos ipsa ad delectus esse quod?</p>
+    <a class="bouton" href="https://www.youtube.com/watch?v=OEWmOXCXh24">Lien du projet</a>
+    <div class="colonnes">
+      <div class="colonne-gauche">
+        <img class="phone-img" src="../assets/images/Dans-ta-serre/1.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas natus molestiae cupiditate voluptatum in excepturi ex consequuntur eligendi ipsam minima laudantium dolorum, ipsa placeat, explicabo et corrupti maiores, fugiat fugit?</p>
+        <img src="../assets/images/Dans-ta-serre/2.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus amet accusamus rerum, nobis suscipit delectus doloribus placeat consectetur sit porro praesentium cum aliquam exercitationem nam at voluptatem! Pariatur, fugiat voluptate?</p>
+      </div>
+      <div class="colonne-droite">
+        <img src="../assets/images/Dans-ta-serre/3.png" alt="">
+        <img class="desktop" src="../assets/images/Dans-ta-serre/logo.png" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  fetch('../code/header.html')
+    .then(response => response.text())
+    .then(html => {
+      var container = document.createElement('header');
+      container.innerHTML = html;
+      document.body.appendChild(container);
+    });
+
+
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(html => {
+    var footerContainer = document.createElement('footer');
+    footerContainer.innerHTML = html;
+    document.body.appendChild(footerContainer);
+  })
+  .catch(error => console.error(error));
+
+  function showNav() {
+      const navbar = document.querySelector('.phone');
+      navbar.classList.toggle('show-nav');
+    }
+</script>
+
+</html>

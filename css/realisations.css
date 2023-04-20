@@ -35,8 +35,15 @@ max-width: 50vw;
 .image-carousel {   /* exemples qui représente un élément */
   height: calc(100% - 2px);
   margin: 20px;
+  object-fit:cover;
 }
 
 .carousel::-webkit-scrollbar {    /* selecteur la barre de défilement de ton conteneur */
   display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .category-title p {
+    max-width: none;
+    }
 }

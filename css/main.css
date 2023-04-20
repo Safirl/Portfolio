@@ -43,6 +43,10 @@ main {
     margin-bottom: 40px;
 }
 
+.presentation a {
+  display: inline;
+}
+
 /* Deuxième paragraphe - Mes valeurs */
 
 .mes-valeurs {

@@ -5,7 +5,7 @@
   max-width: 1440px;
 }
 
-.phone {
+.phone-img {
   display: none;
 }
 
@@ -16,7 +16,8 @@
 
 .colonnes {
   display: flex;
-  margin-top: 80px;
+  margin-top: 180px;
+  margin-bottom: 100px;
 }
 
 .colonnes p {
@@ -45,8 +46,9 @@
     flex-wrap: wrap;
   }
 
-  .phone {
+  .phone-img {
     display: block;
+    width: 80%;
   }
 
   .desktop {
@@ -59,7 +61,7 @@
   }
 
   .colonnes {
-    margin-top: 60px;
+    margin-top: 180px;
   }
 
   .colonnes img {
