@@ -18,8 +18,8 @@ main {
 /* Titre */
 
 .title {
-    margin-bottom: 100px;
-    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-top: 200px;
     max-width: 60vw;
 }
 
@@ -47,7 +47,7 @@ main {
 
 .mes-valeurs {
     display: flex;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .mes-valeurs img {
@@ -63,8 +63,8 @@ main {
 /* Me contacter */
 
 .Contact {
-    margin-top: 100px;
-    margin-bottom: 154px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .informations-contact{
@@ -115,7 +115,7 @@ main {
 
 /* Téléphone */
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 760px) {
     /* Titre */
 
     main {
@@ -139,10 +139,11 @@ main {
     width: 90%;
     margin-bottom: 26px;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .texte-presentation{
-    max-width: 350px;
+    max-width: 231px;
     margin-left: 0;
 }
 

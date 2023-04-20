@@ -25,6 +25,7 @@
 
 .burger {
     display: none;
+
 }
 
 .navbar-boutons {
@@ -110,13 +111,19 @@
     .burger {
         display: block;
         width: 45px;
-        padding-right: 16px;
+        margin-right: 16px;
+        background: none;
+        border: none;
+    }
+
+    .burger img {
+      width: 45px;
     }
 
 
     /* Téléphone */
     .phone {
-
+      z-index: 1;
       background: #f8f8f8;
       position: fixed;
       display: flex;
@@ -127,14 +134,23 @@
       height: 100vh;
       top: 0vh;
       left: 0vw;
-      display: none;
+      margin-left: 100%;
+      transition: all 0.4s ease;
+    }
+
+    .show-nav {
+      margin-left: 0%;
     }
 
     .phone-burger {
         width: 45px;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 30px;
+        top: 40px;
+    }
+
+    .phone-burger img {
+      width: 35px;
     }
 
     .phone-nav-button{

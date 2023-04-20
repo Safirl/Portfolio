@@ -1,6 +1,6 @@
 <body>
 
-   <!-- As a link -->
+  <!-- As a link -->
     <nav class="navbar">
       <ul class="navbar-boutons">
         <li class="Accueil nav-button">
@@ -16,16 +16,16 @@
           <a class="nav-link" href="#">Galerie</a>
         </li>
         <li class="nav-button contact-button">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="../code/index.html#contact">Contact</a>
           </li>
       </ul>
-      <button class="burger">
+      <button class="burger" onClick="showNav()">
         <img src="../assets/images/Burger.svg" alt="menu burger">
       </button>
     </nav>
 
       <!-- menu burger -->
-<!-- <div class="phone">
+<div class="phone">
   <ul class="phone-nav-links">
     <li class="phone-nav-button">
       <a class="phone-nav-link" href="../code/developpement.html">Développement</a>
@@ -37,19 +37,12 @@
       <a class="phone-nav-link" href="#">Galerie</a>
     </li>
     <li class="phone-nav-button contact-button">
-      <a class="phone-nav-link" href="#">Contact</a>
+      <a class="phone-nav-link" href="../code/index.html#contact">Contact</a>
     </li>
   </ul>
-  <img class="burger" src="../assets/images/Burger.svg" alt="menu burger">
-</div> -->
-
-<script>
-  const burger = document.querySelector('.burger');
-  const navbar = document.querySelector('.navbar-boutons');
-
-  burger.addEventListener('click',() => {
-    navbar.classList.toggle('show');
-  });
-</script>
+  <button class="burger phone-burger" onClick="showNav()">
+    <img src="../assets/images/Group.svg" alt="menu burger">
+  </button>
+</div>
 
 </body>

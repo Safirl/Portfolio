@@ -12,6 +12,10 @@
   ;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
     /* H1 */
 
@@ -20,6 +24,7 @@ h1 {
     font-weight: 400;
     font-size: 96px;
     line-height: 122px;
+    margin-bottom: 30px;
 
     color: #000000;
 
@@ -114,19 +119,20 @@ img {
     .bouton{
 
         /* Bouton */
-        font-size: 26px;
+        font-size: 24px;
+        display: block;
 
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 760px){
     h1 {
         /* H1 */
         font-weight: 400;
         font-size: 46px;
         line-height: 59px;
 
-        -webkit-text-stroke: 2px #000000;
+        -webkit-text-stroke: 1px #000000;
     }
 
     .h1-phone {

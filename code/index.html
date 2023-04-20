@@ -15,16 +15,6 @@
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
-<script>
-  fetch('../code/header.html')
-  .then(response => response.text())
-  .then(html => {
-    var container = document.createElement('header');
-    container.innerHTML = html;
-    document.body.appendChild(container);
-  });
-</script>
-
 <body>
   <div class="container">
     <main class="main">
@@ -41,7 +31,7 @@
             <h1 class="h1-phone">Qui suis-je ?</h1>
             <img src="../assets/images/LEFORESTIER_Loic_PhotoPerso.jpg" alt="Une photo de moi sous mon meilleur jour !">
             <div class="texte-presentation">
-                <h2>Qui suis-je ?</h2>
+                <h2 class="h2-desktop">Qui suis-je ?</h2>
                 <p>Après mon Bac S à Toulouse, je me suis d’abord orienté vers des études en audiovisuelle grâce à une classe préparatoire en cinéma. Deux ans après, je me réoriente en BUT MMI de Bordeaux avec pour objectif de travailler dans le secteur du jeu vidéo.  Grâce à cette formation, j’ai pu  réaliser de nombreux projets. </p>
                 <a class="bouton" href="../code/realisations.html">Mes réalisations</a>
             </div>
@@ -62,7 +52,7 @@
 
     <!-- //Me contacter -->
 
-        <div class="Contact">
+        <div class="Contact" id="contact">
             <h1>Me contacter</h1>
             <div class="informations-contact">
                 <img src="../assets/images/WhatsApp-Image-2023-02-24 … 21.45.12.jpg" alt="Un arbre représentant mes différentes valeurs.">
@@ -101,6 +91,15 @@
 
 
     <script>
+
+      fetch('../code/header.html')
+        .then(response => response.text())
+        .then(html => {
+          var container = document.createElement('header');
+          container.innerHTML = html;
+          document.body.appendChild(container);
+        });
+
       fetch('footer.html')
       .then(response => response.text())
       .then(html => {
@@ -109,5 +108,10 @@
         document.body.appendChild(footerContainer);
       })
       .catch(error => console.error(error));
+
+    function showNav() {
+      const navbar = document.querySelector('.phone');
+      navbar.classList.toggle('show-nav');
+    }
     </script>
 </html>

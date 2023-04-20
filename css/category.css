@@ -1,13 +1,14 @@
 .container {
   margin-left: 7vw;
   margin-right: 7vw;
+  margin-bottom: 50px;
 }
 
 /* Titre */
 
 .title {
   margin-bottom: 100px;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .title-text {
@@ -27,6 +28,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 200px;
 }
 
 .card {
@@ -55,7 +57,7 @@
   padding-right: 35px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 760px) {
   container {
   margin-right: 0 px;
   }

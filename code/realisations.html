@@ -109,6 +109,11 @@
     document.body.appendChild(footerContainer);
   })
   .catch(error => console.error(error));
+
+  function showNav() {
+      const navbar = document.querySelector('.phone');
+      navbar.classList.toggle('show-nav');
+    }
 </script>
 
 </html>

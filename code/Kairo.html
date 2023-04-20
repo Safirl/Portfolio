@@ -15,15 +15,7 @@
     <link rel="stylesheet" href="../css/projet.css">
 </head>
 
-<script>
-  fetch('../code/header.html')
-  .then(response => response.text())
-  .then(html => {
-    var container = document.createElement('header');
-    container.innerHTML = html;
-    document.body.appendChild(container);
-  });
-</script>
+
 
 <body>
   <div class="container"></div>
@@ -48,8 +40,17 @@
 
 </body>
 
-
 <script>
+
+  fetch('../code/header.html')
+    .then(response => response.text())
+    .then(html => {
+      var container = document.createElement('header');
+      container.innerHTML = html;
+      document.body.appendChild(container);
+    });
+
+
   fetch('footer.html')
   .then(response => response.text())
   .then(html => {
@@ -58,6 +59,11 @@
     document.body.appendChild(footerContainer);
   })
   .catch(error => console.error(error));
+
+  function showNav() {
+      const navbar = document.querySelector('.phone');
+      navbar.classList.toggle('show-nav');
+    }
 </script>
 
 </html>
