@@ -38,6 +38,14 @@
   width: 538px;
   padding-bottom: 35px;
   height: fit-content;
+
+  transition: ease-in 0.2s;
+}
+
+.card:hover {
+  background: rgba(138, 87, 156, 0.405);
+
+
 }
 
 .card img {

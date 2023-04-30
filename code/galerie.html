@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Leforestier - Galerie</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galerie.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<script>
+  fetch('../code/header.html')
+  .then(response => response.text())
+  .then(html => {
+    var container = document.createElement('header');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+  });
+</script>
+
+<body>
+  <main class ="main-realisations">
+    <div class="title-realisations">
+      <p class="fil-arianne">
+        <a href="../code/index.html">Accueil</a>
+        >
+        <a href="../code/galerie.html">Galerie</a>
+
+      </p>
+      <h1>Galerie</h1>
+      <p>Vous pouvez retrouver ici différentes séries photographiques, ainsi que les photomontages que je réalise sur mon temps libre.</p>
+  </div>
+
+  <div class="projets">
+    <div class="category-title">
+      <h2>Photomontages</h2>
+      </div>
+      <div class="background-image"></div>
+      <section class="carousel">
+          <img class="image-carousel" src="../assets/images/Bild/Capture d’écran 2023-04-20 à 14.11.11.png" alt="" onclick="enlargeImage(this)" id="image-carousel">
+      </section>
+
+
+  </main>
+</body>
+
+
+<script>
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(html => {
+    var footerContainer = document.createElement('footer');
+    footerContainer.innerHTML = html;
+    document.body.appendChild(footerContainer);
+  })
+  .catch(error => console.error(error));
+
+  function showNav() {
+      const navbar = document.querySelector('.phone');
+      navbar.classList.toggle('show-nav');
+    }
+
+  function enlargeImage(img) {
+    img.classList.toggle('enlargeImage');
+  }
+</script>
+
+</html>
