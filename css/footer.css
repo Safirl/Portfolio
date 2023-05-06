@@ -41,6 +41,16 @@
     text-decoration-line: underline;
 }
 
+.container-mentions {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
 @media screen and (max-width: 550px) {
   .ligne {
     margin-top: 24px;
