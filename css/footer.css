@@ -43,8 +43,8 @@
 
 .container-mentions {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   justify-content: center;
   align-items: center;
   text-align: center;
