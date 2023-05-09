@@ -26,6 +26,7 @@
 
 .colonnes img {
   margin-bottom: 100px;
+  min-width: 100%;
 }
 
 .colonne-gauche {
