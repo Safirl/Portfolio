@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Leforestier - Projets</title>
+    <link rel="icon" type="image/jpg" href="../assets/images/LEFORESTIER_Loic_PhotoPerso.jpg">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script type="module" src="../js/projectList.js"></script>
+</head>
+
+<script>
+    fetch('../code/header.html')
+    .then(response => response.text())
+    .then(html => {
+        var container = document.createElement('header');
+        container.innerHTML = html;
+        document.body.appendChild(container);
+    });
+</script>
+
+
+<body>
+    <div class="container">
+        <section class="title">
+            <p class="fil-arianne">
+                <a href="../index.html">Accueil</a>
+                >
+                <span class="contentTitle" ></span>
+
+            </p>
+            <h1 class="contentTitle"></h1>
+            <p class="title-text description"></p>
+            <ul class="boutons-projets">
+                <li class="bouton-ref-projet">
+                    <a class="bouton accountLink" href=""></a>
+                </li>
+                <li class="bouton-ref-projet">
+                    <a class="bouton secondAccountLink" href=""></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- cartes -->
+    <div class="card-container">
+    </div>
+
+</body>
+
+<script>
+    fetch('../code/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        var footerContainer = document.createElement('footer');
+        footerContainer.innerHTML = html;
+        document.body.appendChild(footerContainer);
+    })
+    .catch(error => console.error(error));
+
+    function showNav() {
+        const navbar = document.querySelector('.phone');
+        navbar.classList.toggle('show-nav');
+    }
+</script>
+
+</html>
