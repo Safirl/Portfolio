@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal site.
+Archive of my first portfolio.
 
 ## How to install
 
